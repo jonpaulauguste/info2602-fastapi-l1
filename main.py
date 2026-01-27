@@ -18,7 +18,7 @@ async def get_students(pref=None):
     if pref:
         filtered_students = []
         for student in data:
-            if student['pref'] == pref: # select only the students with a given meal preference
+            if student['pref'] == pref: 
                 filtered_students.append(student)
         return filtered_students
     return data
